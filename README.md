@@ -1,3 +1,2 @@
 # SmackApp
-HELLO
-Test123
+HELLO, IT'S ME!
