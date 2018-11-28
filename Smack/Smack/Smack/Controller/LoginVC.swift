@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginVC.swift
 //  Smack
 //
 //  Created by piatkovskyi on 11/28/18.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    @IBAction func closePressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
-
