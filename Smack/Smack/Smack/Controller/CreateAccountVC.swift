@@ -21,7 +21,7 @@ class CreateAccountVC: UIViewController {
     
     // Variables
     var avatarName = "profileDefault"
-    var defaultAvatarColor = "[0.5, 0.5, 0.5, 1]"
+    var avatarColor = "[0.5, 0.5, 0.5, 1]"
     var bgColor: UIColor?
 
     override func viewDidLoad() {
@@ -54,7 +54,7 @@ class CreateAccountVC: UIViewController {
             if success {
                 AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
                     if success {
-                        AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.defaultAvatarColor, completion: { (success) in
+                        AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
                             if success {
                                 self.spinner.isHidden = true
                                 self.spinner.stopAnimating()
@@ -75,7 +75,7 @@ class CreateAccountVC: UIViewController {
         let b = CGFloat(arc4random_uniform(255)) / 255
         
         bgColor = UIColor(red: r, green: g, blue: b, alpha: 1)
-        
+        avatarColor = "[\(r), \(g), \(b), 1]"
         UIImageView.animate(withDuration: 0.2) {
             self.userImg.backgroundColor = self.bgColor
         }

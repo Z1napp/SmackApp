@@ -25,6 +25,8 @@
 		C7A618B221B012A00087F908 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A618B121B012A00087F908 /* AvatarPickerVC.swift */; };
 		C7A618B421B013BC0087F908 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A618B321B013BC0087F908 /* AvatarCell.swift */; };
 		C7A618B621B01B180087F908 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A618B521B01B180087F908 /* CircleImage.swift */; };
+		C7C9984621B02AB30011B64A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C9984421B02AB30011B64A /* ProfileVC.swift */; };
+		C7C9984721B02AB30011B64A /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7C9984521B02AB30011B64A /* ProfileVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		C7A618B121B012A00087F908 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		C7A618B321B013BC0087F908 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		C7A618B521B01B180087F908 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		C7C9984421B02AB30011B64A /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		C7C9984521B02AB30011B64A /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		E2E2C25010F152804EAFDF42 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		EB2A7593DCAD3C16F3379BEF /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 		F5F6A7A98D281065E0134FB6 /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +92,7 @@
 		C742976221AE9F6400246982 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				C7C9984821B02ABD0011B64A /* XIB's */,
 				C7A618AA21AFFAF80087F908 /* Services */,
 				C753C0CB21AEBD61001BB224 /* Utilities */,
 				C742977C21AEB18400246982 /* Model */,
@@ -120,6 +125,7 @@
 				C753C0CE21AEC069001BB224 /* LoginVC.swift */,
 				C753C0D021AEC19B001BB224 /* CreateAccountVC.swift */,
 				C7A618B121B012A00087F908 /* AvatarPickerVC.swift */,
+				C7C9984421B02AB30011B64A /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +163,14 @@
 				C7A618AF21B00B050087F908 /* UserDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		C7C9984821B02ABD0011B64A /* XIB's */ = {
+			isa = PBXGroup;
+			children = (
+				C7C9984521B02AB30011B64A /* ProfileVC.xib */,
+			);
+			path = "XIB's";
 			sourceTree = "<group>";
 		};
 		EB0B62A7548AFBFA96474F73 /* Frameworks */ = {
@@ -237,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C9984721B02AB30011B64A /* ProfileVC.xib in Resources */,
 				C742976E21AE9F6500246982 /* LaunchScreen.storyboard in Resources */,
 				C742976B21AE9F6500246982 /* Assets.xcassets in Resources */,
 				C742976921AE9F6400246982 /* Main.storyboard in Resources */,
@@ -295,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C9984621B02AB30011B64A /* ProfileVC.swift in Sources */,
 				C742978021AEB1AF00246982 /* ChannelVC.swift in Sources */,
 				C7A618B221B012A00087F908 /* AvatarPickerVC.swift in Sources */,
 				C7A618AE21B002AD0087F908 /* RoundedButton.swift in Sources */,
