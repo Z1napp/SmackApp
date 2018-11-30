@@ -25,6 +25,8 @@
 		C7A618B221B012A00087F908 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A618B121B012A00087F908 /* AvatarPickerVC.swift */; };
 		C7A618B421B013BC0087F908 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A618B321B013BC0087F908 /* AvatarCell.swift */; };
 		C7A618B621B01B180087F908 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A618B521B01B180087F908 /* CircleImage.swift */; };
+		C7C349C621B132A50040E21E /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C349C521B132A50040E21E /* MessageService.swift */; };
+		C7C349C821B132BF0040E21E /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C349C721B132BF0040E21E /* Channel.swift */; };
 		C7C9984621B02AB30011B64A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C9984421B02AB30011B64A /* ProfileVC.swift */; };
 		C7C9984721B02AB30011B64A /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7C9984521B02AB30011B64A /* ProfileVC.xib */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,8 @@
 		C7A618B121B012A00087F908 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		C7A618B321B013BC0087F908 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		C7A618B521B01B180087F908 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		C7C349C521B132A50040E21E /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		C7C349C721B132BF0040E21E /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		C7C9984421B02AB30011B64A /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C7C9984521B02AB30011B64A /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		E2E2C25010F152804EAFDF42 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 		C742977C21AEB18400246982 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C7C349C721B132BF0040E21E /* Channel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			children = (
 				C7A618AB21AFFB100087F908 /* AuthService.swift */,
 				C7A618AF21B00B050087F908 /* UserDataService.swift */,
+				C7C349C521B132A50040E21E /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -314,7 +320,9 @@
 				C742978021AEB1AF00246982 /* ChannelVC.swift in Sources */,
 				C7A618B221B012A00087F908 /* AvatarPickerVC.swift in Sources */,
 				C7A618AE21B002AD0087F908 /* RoundedButton.swift in Sources */,
+				C7C349C821B132BF0040E21E /* Channel.swift in Sources */,
 				C7A618B621B01B180087F908 /* CircleImage.swift in Sources */,
+				C7C349C621B132A50040E21E /* MessageService.swift in Sources */,
 				C742977E21AEB19E00246982 /* ChatVC.swift in Sources */,
 				C7A618B021B00B050087F908 /* UserDataService.swift in Sources */,
 				C753C0D121AEC19B001BB224 /* CreateAccountVC.swift in Sources */,
