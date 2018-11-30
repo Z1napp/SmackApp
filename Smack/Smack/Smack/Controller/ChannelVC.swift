@@ -41,6 +41,12 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    @IBAction func addChannelPressed(_ sender: Any) {
+        let profile = AddChannelVC()
+        profile.modalPresentationStyle = .custom
+        present(profile, animated: true, completion: nil)
+    }
+    
     @objc func userDataDidChange(_ notif: Notification) {
         self.setupUserInfo()
     }
