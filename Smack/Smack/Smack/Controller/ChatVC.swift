@@ -16,6 +16,14 @@ class ChatVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupMenuBtn()
+        
+        if AuthService.instance.isLoggedIn {
+            AuthService.instance.findUserByEmail(completion: { (success) in
+                if success {
+                    NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+                }
+            })
+        }
     }
     
     private func setupMenuBtn() {
