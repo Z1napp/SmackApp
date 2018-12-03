@@ -19,6 +19,7 @@ let URL_USER_ADD = "\(BASE_URL)user/add"
 let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
 let URL_GET_CHANNELS = "\(BASE_URL)channel/"
 let URL_GET_Messages = "\(BASE_URL)message/byChannel/"
+let URL_UPDATE_USER = "\(BASE_URL)user/"
 
 // Colors
 let smackPurplePlaceholder = #colorLiteral(red: 0.2588235294, green: 0.3294117647, blue: 0.7254901961, alpha: 0.5)
