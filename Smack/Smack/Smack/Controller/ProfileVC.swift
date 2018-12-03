@@ -18,6 +18,11 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        NotificationCenter.default.addObserver(self, selector: #selector(userDataDidChange), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
     }
     
     @IBAction func logoutPressed(_ sender: Any) {
@@ -38,9 +43,23 @@ class ProfileVC: UIViewController {
         
         let closeTouch = UITapGestureRecognizer(target: self, action: #selector(handleCloseTouch))
         bgView.addGestureRecognizer(closeTouch)
+        
+        let nameTouch = UITapGestureRecognizer(target: self, action: #selector(handleNameTouch))
+        self.username.addGestureRecognizer(nameTouch)
+        self.username.isUserInteractionEnabled = true
     }
     
     @objc func handleCloseTouch() {
         dismiss(animated: true, completion: nil)
+    }
+
+    @objc func handleNameTouch() {
+        let nameVC = ProfileNameVC()
+        nameVC.modalPresentationStyle = .custom
+        present(nameVC, animated: true, completion: nil)
+    }
+    
+    @objc func userDataDidChange(_ notif: Notification) {
+        self.setupView()
     }
 }

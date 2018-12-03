@@ -130,6 +130,19 @@ class AuthService {
         }
     }
     
+    func changeName(username: String, completion: @escaping CompletionHandler) {
+        let body: [String: String] = ["name": username]
+        Alamofire.request("\(URL_UPDATE_USER)\(UserDataService.instance.id)", method: .put, parameters: body, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
+            if response.result.error == nil {
+                self.updateUserInfo(with: username)
+                completion(true)
+            } else {
+                completion(false)
+                debugPrint(response.result.error as Any)
+            }
+        }
+    }
+    
     func setUserInfo(data: Data) {
         let json = JSON(data: data)
         
@@ -142,6 +155,20 @@ class AuthService {
         UserDataService.instance.setUserData(id: identifier,
                                              avatarColor: avatarColor,
                                              name: name,
+                                             avatarName: avatarName,
+                                             email: email)
+    }
+    
+    func updateUserInfo(with username: String) {
+        let inst = UserDataService.instance
+        let id = inst.id
+        let color = inst.avatarColor
+        let avatarName = inst.avatarName
+        let email = inst.email
+        
+        UserDataService.instance.setUserData(id: id,
+                                             avatarColor: color,
+                                             name: username,
                                              avatarName: avatarName,
                                              email: email)
     }
